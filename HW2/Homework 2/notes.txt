@@ -1,0 +1,6 @@
+Kaggle submission is position 6,010 - far from ideal, but out of 9,000+ submissions it shows that the model is working on the basic level. 
+
+pull_data.py provides secondary data loading functions used by other modules.
+python train_model.py - reads training data, cleans it, imputes missing values, builds model, saves model, outputs accuracy stats. 
+python score_model.py - reads testing data, cleans it, imputes missing values, loads model, runs prediction, outputs CSV file to be submitted to Kaggle.
+
