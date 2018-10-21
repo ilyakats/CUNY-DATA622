@@ -3,10 +3,7 @@ train_df = loader.read_data_set('train')
 
         
 import boto3
-session = boto3.Session(
-    aws_access_key_id='AKIAI2ZXWJ56DIICLVDQ',
-    aws_secret_access_key='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',
-)
+
 s3 = session.client('s3')
 obj = s3.get_object(Bucket='data622-hw3-kats', Key='train.csv')
 obj['Body'].read().decode('utf-8')
@@ -22,8 +19,7 @@ import boto3
 import io
 import os
 
-os.environ["AWS_ACCESS_KEY_ID"] = "AKIAI2ZXWJ56DIICLVDQ"
-os.environ["AWS_SECRET_ACCESS_KEY"] = "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"
+
 
 s3 = boto3.client('s3')
 obj = s3.get_object(Bucket='data622-hw3-kats', Key='train.csv')
