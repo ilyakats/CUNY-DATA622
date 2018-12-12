@@ -1,0 +1,2 @@
+Installation on Win 10:
+https://changhsinlee.com/install-pyspark-windows-jupyter/
